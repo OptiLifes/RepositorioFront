@@ -1,0 +1,27 @@
+<div class="registro-alimento">
+    <h2>Registrar Alimento</h2>
+    <form (ngSubmit)="saveFood()" #foodForm="ngForm">
+      <div class="form-group">
+        <label for="foodName">Nombre del Alimento:</label>
+        <input type="text" id="foodName" [(ngModel)]="food.name" name="name" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="quantity">Cantidad (gramos):</label>
+        <input type="number" id="quantity" [(ngModel)]="food.quantity" name="quantity" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="category">Categoría:</label>
+        <select id="category" [(ngModel)]="food.category" name="category" required>
+          <option value="desayuno">Desayuno</option>
+          <option value="almuerzo">Almuerzo</option>
+          <option value="cena">Cena</option>
+        </select>
+      </div>
+  
+      <button type="submit" [disabled]="!foodForm.valid">Registrar</button>
+    </form>
+    <p *ngIf="message">{{ message }}</p>
+  </div>
+  

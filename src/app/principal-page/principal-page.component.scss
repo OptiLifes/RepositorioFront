@@ -75,3 +75,60 @@ nav ul li:hover {
 .main-content p {
   color: #666;
 }
+
+.register-food {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.registro-btn {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registro-btn:hover {
+  background-color: #388e3c;
+}
+
+.btn-registrar-agua {
+  margin-top: 10px;
+  padding: 1px 30px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+}
+/* Botones en la parte superior */
+.top-buttons {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  align-items: center; /* Centra los botones verticalmente */
+  gap: 20px; /* Espaciado entre los botones */
+  margin-top: 20px; /* Espaciado desde la parte superior */
+  position: absolute;
+  top: 20px; /* Ajusta esta distancia según lo necesites */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Estilos para los botones */
+.top-buttons button {
+  background-color: #2B8A7E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.top-buttons button:hover {
+  background-color: #246b69;
+}
