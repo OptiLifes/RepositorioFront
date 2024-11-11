@@ -1,0 +1,11 @@
+<div class="profile-container">
+    <h2>Mi Perfil</h2>
+    <div class="profile-info">
+      <img [src]="user.profilePicture" alt="Foto de perfil" class="profile-picture">
+      <p><b>Nombre:</b> {{ user.name }}</p>
+      <p><b>Correo:</b> {{ user.email }}</p>
+    </div>
+    <button routerLink="/profile/edit">Editar Perfil</button>
+    <button routerLink="/profile/change-picture">Cambiar Foto</button>
+  </div>
+  

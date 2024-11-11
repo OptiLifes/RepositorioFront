@@ -1,0 +1,13 @@
+<div class="edit-profile-container">
+    <h2>Editar Perfil</h2>
+    <form (ngSubmit)="saveChanges()">
+      <label for="name">Nombre:</label>
+      <input id="name" type="text" [(ngModel)]="user.name" name="name" required>
+  
+      <label for="email">Correo:</label>
+      <input id="email" type="email" [(ngModel)]="user.email" name="email" required>
+  
+      <button type="submit">Guardar Cambios</button>
+    </form>
+  </div>
+  

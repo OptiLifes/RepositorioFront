@@ -1,0 +1,18 @@
+.profile-container {
+    text-align: center;
+    .profile-picture {
+      width: 100px;
+      border-radius: 50%;
+    }
+    .btn-edit, .btn-change-picture {
+      margin-top: 10px;
+      display: block;
+    }
+  }
+  
+  .edit-profile-container,
+  .change-picture-container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
