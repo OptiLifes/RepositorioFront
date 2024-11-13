@@ -3,6 +3,8 @@ import { LandingPageComponent } from './public/landing-page/landing-page.compone
 import { LoginPageComponent } from './authentication/login-page/login-page.component';
 import { RegisterPageComponent } from './authentication/register-page/register-page.component';
 import { PrincipalPageComponent } from './principal-page/principal-page.component';
+import { RegistroMetaAlimentacionComponent } from './registro-meta-alimentacion/registro-meta-alimentacion.component';
+
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
@@ -39,5 +41,8 @@ export const routes: Routes = [
   { path: 'registro-agua', component: RegistroAguaComponent },
 
   // Redirección por defecto si no se encuentra la ruta
-  { path: '**', redirectTo: 'login', pathMatch: 'full' }
+  { path: '**', redirectTo: 'login', pathMatch: 'full' },
+// Ruta para el registro de meta alimentacion
+  { path: 'registro-meta-alimentacion', component: RegistroMetaAlimentacionComponent },
 ];
+

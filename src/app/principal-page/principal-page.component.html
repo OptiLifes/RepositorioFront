@@ -1,25 +1,147 @@
+
 <div class="container">
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <!-- Imagen de perfil -->
-    <div class="profile-picture">
-      <img src="../../../assets/img/icono1.png" alt="Perfil" routerLink="/profile" style="cursor: pointer;">
-    </div>    
-    <!-- Iconos del menú -->
-    <nav>
-      <ul>
-        <li><i class="fa fa-home"></i></li>
-        <li><i class="fa fa-bell"></i></li>
-        <li><i class="fa fa-star"></i></li>
-        <li><i class="fa fa-edit"></i></li>
-        <li><i class="fa fa-sign-out-alt"></i></li>
-      </ul>
-    </nav>
+    <!-- Sidebar fijo -->
+    <div class="sidebar">
+      <!-- Imagen de perfil -->
+      <div class="profile-picture">
+        <img src="" alt="Perfil" routerLink="/profile" style="cursor: pointer;">
+      </div>
+
+      <!-- Iconos del menú -->
+      <nav>
+        <ul>
+          <li><i class="fa fa-home"></i></li>
+          <li><i class="fa fa-bell"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-edit"></i></li>
+        </ul>
+      </nav>
+
+      <!-- Icono de logout en la parte inferior -->
+      <div class="logout">
+        <i class="fa fa-sign-out-alt"></i>
+      </div>
+    </div>
     <!-- Botones en la parte superior -->
-<div class="top-buttons">
-  <button routerLink="/registro-alimento">Registrar Alimento</button>
-  <button routerLink="/registro-agua">Registrar Hidratación</button>
-  <button routerLink="/registro-sueno">Registrar Horas de Sueño</button>
-</div>  
+    <div style="justify-content: center" class="top-buttons">
+      <div class="button-container">
+        <button class="rounded-button" [routerLink]="['/registro-meta-alimentacion']">
+          <span class="icon">+</span> Agregar nueva meta alimentación
+        </button>
+
+        <button class="rounded-button" routerLink="/registro-alimento">
+        <span class="icon">+</span> Registrar Alimento
+      </button>
+      </div>
+
+      <div class="main-container">
+
+        <div class="container-iz">
+          <!-- Sección Comidas Saludables -->
+          <div style="width: 500px; height: 100px" class="card healthy-food">
+            <div  class="food-image">
+              <img src="" alt="Comidas Saludables">
+            </div>
+            <div class="food-info">
+              <h2>COMIDAS SALUDABLES</h2>
+              <p>Aliméntate bien con nuestras recetas saludables que tenemos para ti</p>
+            </div>
+            <small>Hazte Premium</small>
+          </div>
+
+          <!-- Sección Reporte de Progreso -->
+          <div style="width: 500px; height: 400px" class="card progress-report">
+            <h2>REPORTE DE PROGRESO</h2>
+
+
+            <!-- Indicador de Progreso Principal -->
+            <div class="main-progress">
+              <div class="img-progress">
+
+              </div>
+              <img src="" alt="" class="w-30 h-30 mr-1">
+              <div class="">
+                <!-- Imagen -->
+
+
+                <div class="">
+                  <p  style="text-align: right;font-size: 14px;" >Observa tu progreso</p>
+                  <p  style="font-size: 20px;text-align: right;font-weight: bold ">SEPTIEMBRE 2024</p>
+                  <!-- Botón de Reporte PDF -->
+                  <button style="font-size: 12px;height: 20px;width: 170px;align-items: center;background-color: #00796b;border-radius:30px; color: white; border: transparent">REPORTE PDF</button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Indicadores de Actividades -->
+            <div class="activity-indicators">
+              <div style="color: white" class="indicator">
+                <div class="icon">🥗</div>
+                <p>Consumo diario</p>
+                <span>45%</span>
+              </div>
+              <div style="color: white"  class="indicator">
+                <div class="icon">💪</div>
+                <p>Ejercicio semanal</p>
+                <span>30%</span>
+              </div>
+              <div style="color: white"  class="indicator">
+                <div class="icon">💧</div>
+                <p>Meta de hidratación</p>
+                <span>50%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-der">
+          <!-- Tarjeta Ejercita Tu Cuerpo -->
+            <div class="card-content">
+              <h2>EJERCITA TU CUERPO</h2>
+              <p>Revisa tus progreso y rutinas todos los días</p>
+              <small>Rutina de ejercicios</small>
+            </div>
+
+            <div class="two-column-container">
+              <div class="columna-izquierda">
+                <div class="progress-card">
+                  <button style="background-color: transparent; border: transparent; color: white" routerLink="/registro-sueno">
+                    <div class="boton-sueño">
+                      <p>REGISTRO DE SUEÑO</p>
+                    </div>
+                  </button>
+                </div>
+                <div class="progress-card">
+                  <button style="background-color: transparent; border: transparent; color: white" routerLink="/registro-agua">
+                    <div class="boton-agua">
+                      <p>REGISTRO DE AGUA</p>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="columna-derecha">
+                <div class="card-header">
+                  <span class="hours">8</span>
+                  <p>Horas de sueño</p>
+                </div>
+                <div class="card-image">
+                  <img src="" alt="Mantente Hidratada">
+                </div>
+                <div class="card-footer">
+                  <p>MANTENTE HIDRATADA</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+
 </div>
+
+
+
 </div>
