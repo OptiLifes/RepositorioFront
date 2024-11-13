@@ -1,57 +1,46 @@
-<div class="form-container">
-  <form [formGroup]="metaForm" (ngSubmit)="onSubmit()">
-    <!-- Descripción -->
-    <div class="form-group">
-      <label for="descripcion">Descripción</label>
-      <textarea
-        id="descripcion"
-        formControlName="descripcion"
-        placeholder="Describe tu meta de alimentación"
-      ></textarea>
-      <div *ngIf="metaForm.get('descripcion')?.invalid && metaForm.get('descripcion')?.touched" class="error">
-        La descripción es obligatoria.
-      </div>
+<div class="center-container">
+  <div class="form-container">
+    <!-- Botón de cierre -->
+    <div class="close-button" (click)="goBack()">
+      <i class="fas fa-times"></i>
     </div>
-
-    <!-- Calorías diarias -->
-    <div class="form-group">
-      <label for="calorias">Calorías diarias</label>
-      <input type="number" id="calorias" formControlName="calorias" placeholder="Ingresa calorías diarias" />
-      <div *ngIf="metaForm.get('calorias')?.invalid && metaForm.get('calorias')?.touched" class="error">
-        Ingresa un valor válido de calorías.
+    <h2>Meta de Alimentación</h2>
+    <form [formGroup]="metaForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea
+          id="descripcion"
+          formControlName="descripcion"
+          placeholder="Describe tu meta de alimentación"
+        ></textarea>
+        <div *ngIf="metaForm.get('descripcion')?.invalid && metaForm.get('descripcion')?.touched" class="error">
+          La descripción es obligatoria.
+        </div>
       </div>
-    </div>
 
-    <!-- Proteínas -->
-    <div class="form-group">
-      <label for="proteinas">Proteínas (g)</label>
-      <input type="number" id="proteinas" formControlName="proteinas" placeholder="Ingresa gramos de proteínas" />
-      <div *ngIf="metaForm.get('proteinas')?.invalid && metaForm.get('proteinas')?.touched" class="error">
-        Ingresa un valor válido de proteínas.
+      <div class="form-group">
+        <label for="calorias">Calorías Diarias</label>
+        <input type="number" id="calorias" formControlName="calorias" placeholder="Ingresa calorías diarias" />
       </div>
-    </div>
 
-    <!-- Grasas -->
-    <div class="form-group">
-      <label for="grasas">Grasas (g)</label>
-      <input type="number" id="grasas" formControlName="grasas" placeholder="Ingresa gramos de grasas" />
-      <div *ngIf="metaForm.get('grasas')?.invalid && metaForm.get('grasas')?.touched" class="error">
-        Ingresa un valor válido de grasas.
+      <div class="form-group">
+        <label>Gramos de Proteínas</label>
+        <input type="number" formControlName="proteinas" placeholder="Ingresa gramos de proteínas" />
       </div>
-    </div>
 
-    <!-- Carbohidratos -->
-    <div class="form-group">
-      <label for="carbohidratos">Carbohidratos (g)</label>
-      <input type="number" id="carbohidratos" formControlName="carbohidratos" placeholder="Ingresa gramos de carbohidratos" />
-      <div *ngIf="metaForm.get('carbohidratos')?.invalid && metaForm.get('carbohidratos')?.touched" class="error">
-        Ingresa un valor válido de carbohidratos.
+      <div class="form-group">
+        <label>Gramos de Grasas</label>
+        <input type="number" formControlName="grasas" placeholder="Ingresa gramos de grasas" />
       </div>
-    </div>
 
-    <!-- Botón de Enviar -->
-    <button type="submit" [disabled]="metaForm.invalid" class="submit-button">
-      Registrar Meta de Alimentación
-    </button>
-  </form>
+      <div class="form-group">
+        <label>Gramos de Carbohidratos</label>
+        <input type="number" formControlName="carbohidratos" placeholder="Ingresa gramos de carbohidratos" />
+      </div>
+
+      <button type="submit" [disabled]="metaForm.invalid" class="submit-button">
+        Guardar Meta
+      </button>
+    </form>
+  </div>
 </div>
