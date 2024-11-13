@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-registro-sueno',
   standalone: true,
@@ -32,5 +33,10 @@ export class RegistroSuenoComponent {
     setTimeout(() => {
       this.router.navigate(['/principal']);
     }, 3000);
+  }
+
+  // Función para cerrar el formulario y redirigir a la página principal
+  closeForm() {
+    this.router.navigate(['/principal']);
   }
 }

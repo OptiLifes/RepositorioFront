@@ -31,4 +31,9 @@ export class RegistroAguaComponent {
       this.message = 'Por favor, ingrese una cantidad válida.';
     }
   }
+
+  // Función para cerrar el formulario y retroceder
+  closeForm() {
+    this.router.navigate(['/principal']);
+  }
 }

@@ -8,11 +8,7 @@
     <form [formGroup]="metaForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="descripcion">Descripción</label>
-        <textarea
-          id="descripcion"
-          formControlName="descripcion"
-          placeholder="Describe tu meta de alimentación"
-        ></textarea>
+        <textarea id="descripcion" formControlName="descripcion"placeholder="Describe tu meta de alimentación"></textarea>
         <div *ngIf="metaForm.get('descripcion')?.invalid && metaForm.get('descripcion')?.touched" class="error">
           La descripción es obligatoria.
         </div>

@@ -1,25 +1,37 @@
 .registro-agua-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
-    .form-group {
-      margin-bottom: 15px;
-    }
-  
-    button {
-      padding: 10px 20px;
-      background-color: #4caf50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  
-    p {
-      margin-top: 15px;
-      color: green;
-    }
+  .form-group {
+    margin-bottom: 15px;
   }
+  
+  
+  button {
+    padding: 5px;
+    background-color: #115a4e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  p {
+    margin-top: 15px;
+    
+  }
+}
+
+/* Estilos para el botón de cierre "X" */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
   

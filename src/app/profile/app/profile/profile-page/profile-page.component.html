@@ -1,11 +1,20 @@
-<div class="profile-container">
-    <h2>Mi Perfil</h2>
-    <div class="profile-info">
-      <img [src]="user.profilePicture" alt="Foto de perfil" class="profile-picture">
-      <p><b>Nombre:</b> {{ user.name }}</p>
-      <p><b>Correo:</b> {{ user.email }}</p>
+<div class="modal-overlay" *ngIf="isOpen">
+  <div class="profile-container">
+    <!-- Botón de Cierre -->
+    <div class="close-button" (click)="goBack()">
+      <i class="fas fa-times"></i>
     </div>
-    <button routerLink="/profile/edit">Editar Perfil</button>
-    <button routerLink="/profile/change-picture">Cambiar Foto</button>
+
+    <!-- Información de Perfil -->
+    <div class="profile-info">
+      <img src="https://via.placeholder.com/100" alt="Foto de perfil" class="profile-picture" style="height: 150px; width: 150px;">
+      <div class="profile-details">
+        <h2>Laura Benites Marquez</h2>
+        <p>Edad: 25 años</p>
+        <p>Talla: 160 cm</p>
+        <p>Peso: 62 kg</p>
+        <button routerLink="/edit-profile" class="btn-edit">Editar perfil</button>
+      </div>
+    </div>
   </div>
-  
+</div>

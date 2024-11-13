@@ -7,6 +7,16 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    transition: color 0.3s;
+  }
+
   h2 {
     text-align: center;
     margin-bottom: 20px;
