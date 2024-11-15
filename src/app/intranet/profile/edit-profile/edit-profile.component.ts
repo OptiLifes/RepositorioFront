@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   standalone: true,
   templateUrl: './edit-profile.component.html',
   styleUrls: ['./edit-profile.component.scss'],
-  imports: [FormsModule] // Asegúrate de importar FormsModule aquí
+  imports: [FormsModule]
 })
 export class EditProfileComponent {
   user = {
@@ -17,9 +17,14 @@ export class EditProfileComponent {
 
   constructor(private router: Router) {}
 
+  // Método para guardar los cambios y redirigir al perfil
   saveChanges() {
     alert('Perfil actualizado');
-    // Aquí rediriges al perfil después de guardar
+    this.router.navigate(['/profile']);
+  }
+
+  // Método para regresar al perfil sin guardar cambios
+  goBack() {
     this.router.navigate(['/profile']);
   }
 }
