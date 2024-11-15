@@ -1,13 +1,28 @@
-<div class="edit-profile-container">
+<div class="center-container">
+  <div class="edit-profile-container">
+    <!-- Botón de retroceso alineado a la derecha -->
+    <div class="header-container">
+      <button class="back-button" (click)="goBack()">
+        <i class="fas fa-arrow-left"></i> Volver
+      </button>
+    </div>
+
     <h2>Editar Perfil</h2>
     <form (ngSubmit)="saveChanges()">
-      <label for="name">Nombre:</label>
-      <input id="name" type="text" [(ngModel)]="user.name" name="name" required>
-  
-      <label for="email">Correo:</label>
-      <input id="email" type="email" [(ngModel)]="user.email" name="email" required>
-  
-      <button type="submit">Guardar Cambios</button>
+      <!-- Campo de Nombre -->
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input id="name" type="text" [(ngModel)]="user.name" name="name" placeholder="Ingresa tu nombre completo" required>
+      </div>
+
+      <!-- Campo de Correo -->
+      <div class="form-group">
+        <label for="email">Correo:</label>
+        <input id="email" type="email" [(ngModel)]="user.email" name="email" placeholder="Ingresa tu correo electrónico" required>
+      </div>
+
+      <!-- Botón para guardar cambios -->
+      <button type="submit" class="submit-button">Guardar Cambios</button>
     </form>
   </div>
-  
+</div>

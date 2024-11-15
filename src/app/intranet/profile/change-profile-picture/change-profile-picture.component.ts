@@ -24,4 +24,8 @@ export class ChangeProfilePictureComponent {
       alert('Por favor, selecciona una foto.');
     }
   }
+
+  goBack() {
+    this.router.navigate(['/profile']);
+  }
 }
