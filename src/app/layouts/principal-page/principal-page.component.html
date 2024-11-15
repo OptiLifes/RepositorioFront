@@ -4,9 +4,9 @@
     <div class="sidebar">
       <!-- Imagen de perfil -->
       <div class="profile-picture">
-        <img src="assets/img/perfil.jpeg" alt="Perfil" routerLink="/profile-page" style="cursor: pointer;">
+        <img src="../../../assets/img/perfil.jpeg" alt="Perfil" routerLink="/profile" style="cursor: pointer;">
       </div>
-      
+
 
       <!-- Iconos del menú -->
       <nav>
@@ -19,7 +19,7 @@
       </nav>
 
       <!-- Icono de logout en la parte inferior -->
-      <div class="logout">
+      <div class="logout" (click)="logout()">
         <i class="fa fa-sign-out-alt"></i>
       </div>
     </div>
@@ -41,7 +41,7 @@
           <!-- Sección Comidas Saludables -->
           <div style="width: 500px; height: 100px" class="card healthy-food">
             <div  class="food-image">
-              <img src="" alt="Comidas Saludables">
+              <img src="../../../assets/img/comidassaludables.png" alt="Comidas Saludables">
             </div>
             <div class="food-info">
               <h2>COMIDAS SALUDABLES</h2>
@@ -53,15 +53,15 @@
           <!-- Sección Reporte de Progreso -->
           <div class="card progress-report" style="width: 500px; padding: 20px; height: 500px;">
             <h2 style="text-align: center; font-size: 32px;">REPORTE DE PROGRESO</h2>
-          
+
             <!-- Texto de progreso y fecha -->
             <div style="text-align: center;display: flex; flex-direction: column;">
               <div style="display: flex; justify-content: center; gap: 20px;">
                 <!-- Columna 1: Imagen -->
                 <div style="display: flex; flex-direction: column; align-items: center;">
-                  <img style="height: 150px; width: auto;" src="assets/img/report_img.png" alt="Reporte">
+                  <img style="height: 150px; width: auto;" src="../../../assets/img/report_img.png" alt="Reporte">
                 </div>
-              
+
                 <!-- Columna 2: Texto y botón -->
                 <div style="display: flex; justify-content: flex-end; margin-top: 35px;">
                   <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 5px;">
@@ -70,12 +70,12 @@
                     <button class="report-btn" style="margin-top: 10px;">REPORTE PDF</button>
                   </div>
                 </div>
-                
-                
+
+
               </div>
-              
+
             </div>
-          
+
             <!-- Indicadores de Actividades -->
             <div class="activity-indicators">
               <div class="indicator">
@@ -94,7 +94,7 @@
                 <span>50%</span>
               </div>
             </div>
-          
+
             <!-- Historial de Progreso Semanal -->
             <div class="weekly-progress">
               <div class="day-progress">
@@ -111,7 +111,7 @@
               </div>
             </div>
           </div>
-          
+
         </div>
 
         <div class="container-der">
@@ -127,7 +127,7 @@
                 <div class="progress-card">
                   <button style="background-color: transparent; border: transparent; color: white" routerLink="/registro-sueno">
                     <div style="align-content: center;justify-content: center;" class="sueño">
-                      <img style="height: 100px; width: 150px;" src="assets/img/hora-sueño.png">
+                      <img style="height: 100px; width: 150px;" src="../../../assets/img/hora-sueño.png">
                       <p>REGISTRO DE SUEÑO</p>
                     </div>
                   </button>
@@ -135,7 +135,7 @@
                 <div style="margin-top: 6px;" class="progress-card">
                   <button style="background-color: transparent; border: transparent; color: white" routerLink="/registro-agua">
                     <div class="agua">
-                      <img style="height: 100px; width: 100px;" src="assets/img/hidrata.png">
+                      <img style="height: 100px; width: 100px;" src="../../../assets/img/hidrata.png">
                       <p>REGISTRO DE AGUA</p>
                     </div>
                   </button>
@@ -143,14 +143,14 @@
               </div>
               <div class="columna-derecha">
                 <div style="height: 300px;" class="card-header">
-                  <img src="assets/img/item-sueño.png" alt="sueño">
+                  <img src="../../../assets/img/item-sueño.png" alt="sueño">
                 </div>
                 <p style="color: white;font-weight: bold; font-size: 20px;margin: 0;">DESCANSA BIEN</p>
                 <div class="card-footer">
-                  <img style="height: 350px;" src="assets/img/item-agua.png" alt="agua">
-                  
+                  <img style="height: 350px;" src="../../../assets/img/item-agua.png" alt="agua">
+
                 </div>
-                <p style="color: white;font-weight: bold; font-size: 24px;margin: 0;">MANTENTE HIDRATADA</p>
+                <p style="color: white;font-weight: bold; font-size: 24px;margin: 0;">MANTENTE HIDRATADO</p>
               </div>
             </div>
         </div>

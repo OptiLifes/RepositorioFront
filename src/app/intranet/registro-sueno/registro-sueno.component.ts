@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-registro-sueno',
+  selector: 'app-registro-sueño',
   standalone: true,
   templateUrl: './registro-sueno.component.html',
   styleUrls: ['./registro-sueno.component.scss'],
