@@ -1,0 +1,33 @@
+.profile-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .profile-info {
+    margin: 20px 0;
+  }
+  
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .btn-edit,
+  .btn-change-picture {
+    margin: 10px 5px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-edit:hover,
+  .btn-change-picture:hover {
+    background-color: #0056b3;
+  }
+  

@@ -16,3 +16,11 @@ HU03 - Cierre de Sesión --------> (Fabricio Ulco)
 
 Como usuario, quiero poder cerrar sesión en cualquier momento, para proteger mi cuenta.
 
+HU04 - Visualizacion de perfil ------> (Alcantara Lopez) SOLO INTERFACES 
+Como usuario, quiero ver mi información básica (nombre y correo) en mi perfil, para asegurarme de que mis datos personales están correctos.
+
+HU05 - Actualizacion de foto de perfil ------> (Alcantara Lopez) SOLO INTERFACES
+Como usuario, quiero actualizar mi foto de perfil, para personalizar mi cuenta.
+
+HU05 - Actualizacion de perfil -------> (Alcantara Lopez) SOLO INTERFACES
+Como usuario registrado, quiero poder actualizar mis datos personales y ajustar mis metas de salud, para reflejar mis cambios de estilo de vida o necesidades actuales.
