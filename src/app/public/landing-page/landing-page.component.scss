@@ -1,0 +1,263 @@
+/* Estilos globales */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.landing-page {
+  width: 100%;
+}
+
+/* Encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+  background: linear-gradient(to right,  #2B8C82 0%,#2485A5  100%);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.logo-container img {
+  height: 50px;
+}
+
+.button-container {
+  text-align: right;
+}
+
+.join-button {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.join-button:hover {
+  background-color: #ffcd00;
+}
+
+/* Sección principal */
+.main-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f0f4f8;
+  height: 70vh;
+  position: relative;
+}
+
+.main-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url('/assets/img/ovalo.png') no-repeat center center;
+  background-size: 87%;
+  background-position: right center;
+  z-index: 0;
+}
+
+.text-container {
+  flex: 1;
+}
+
+.text-container h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.text-container .highlight {
+  color: #3eb5a4;
+}
+
+.text-container p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.main-image {
+  max-width: 80%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* Sección de Beneficios */
+.benefits {
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 30px;
+  margin-top: -40px;
+
+}
+
+.benefits h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.benefit-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.benefit-item {
+  text-align: center;
+  width: 30%;
+}
+
+.benefit-item img {
+  width: 100px;
+  height: auto;
+}
+
+.benefit-item p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.benefit-item p:first-of-type {
+  font-weight: bold;
+  color: #000; /* Pone el título de los beneficios en negro */
+}
+
+/* Sección ¿Quiénes Somos? */
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  gap: 30px;
+
+  .about-image {
+    position: relative;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img.tablet-image {
+      width: 95%;
+      height: auto;
+      position: absolute;
+      z-index: 1;
+    }
+
+    img.landing-image {
+      position: relative;
+      z-index: 2;
+      width: 70%;
+      height: auto;
+      margin-left: 10%;
+    }
+  }
+
+  .about-text {
+    max-width: 50%;
+    text-align: left;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #333;
+    }
+  }
+}
+
+/* Sección Cómo funciona */
+.how-it-works {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.step {
+  text-align: center;
+  width: 30%;
+}
+
+.circle1 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background-image: url('/src/assets/img/circulo1.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle2 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background-image: url('/src/assets/img/circulo2.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle3 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background-image: url('/src/assets/img/circulo 3.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 70px;
+  height: auto;
+}
+
+.step p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}

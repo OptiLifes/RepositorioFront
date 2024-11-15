@@ -1,0 +1,90 @@
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #2B8C82, #2485A5);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 img.icono {
+  width: 40px; /* Ajusta el tamaño según prefieras */
+  height: 40px; /* Ajusta el tamaño según prefieras */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.options {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.options a {
+  color: #000000;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background: linear-gradient(to right, #2B8C82, #2485A5);
+  color: white;
+  border: none;
+}
+
+.register {
+  margin-top: 20px;
+}
+
+.register p {
+  font-size: 0.9rem;
+}
+
+.register a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #005bb5;
+}

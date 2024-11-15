@@ -1,0 +1,62 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, #2B8C82, #2485A5);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+.logos {
+  display: flex;
+  gap: 20px;
+}
+
+.logos i {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.logos i:hover {
+  transform: scale(1.2);
+}
+
+.lema {
+  text-align: center;
+  max-width: 50%;
+}
+
+.lema h1 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.contactanos {
+  text-align: right;
+}
+
+.contactanos h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contacto-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contactanoslogos {
+  margin-right: 10px;
+}
+
+.contactanoslogos i {
+  font-size: 24px;
+}
+
+.contactanostexto p {
+  margin: 0;
+  font-size: 14px;
+}
