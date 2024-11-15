@@ -11,14 +11,11 @@ import { Router, RouterModule } from '@angular/router';
 export class LoginPageComponent {
   constructor(private router: Router) {}
 
-  // Método para manejar el inicio de sesión
   login() {
-    // Aquí puedes poner tu lógica para validar el usuario y contraseña
-    const isAuthenticated = true; // Simulación del inicio de sesión exitoso
-
+    const isAuthenticated = true; // Aquí debes agregar tu lógica real para autenticar al usuario
     if (isAuthenticated) {
-      // Redirigir al usuario a la página principal
-      this.router.navigate(['/principal']);
+      localStorage.setItem('isAuthenticated', 'true'); // Almacena el estado de autenticación
+      this.router.navigate(['/principal']); // Redirige al usuario a la página principal
     } else {
       alert('Usuario o contraseña incorrectos');
     }

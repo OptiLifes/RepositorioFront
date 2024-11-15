@@ -13,4 +13,13 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'OptiLife';
+  isModalOpen = false;
+
+  openModal() {
+    this.isModalOpen = true;
+  }
+
+  closeModal() {
+    this.isModalOpen = false;
+  }
 }

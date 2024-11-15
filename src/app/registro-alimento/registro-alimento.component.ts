@@ -32,4 +32,8 @@ export class RegistroAlimentoComponent {
       this.message = 'Por favor, complete todos los campos correctamente';
     }
   }
+  // Método para redirigir a la página principal
+  goBack() {
+    this.router.navigate(['/principal']);
+  }
 }

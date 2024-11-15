@@ -1,4 +1,8 @@
 <div class="registro-alimento">
+  <!-- Botón de Cierre -->
+  <div class="close-button" (click)="goBack()">
+    <i class="fas fa-times"></i>
+  </div>
     <h2>Registrar Alimento</h2>
     <form (ngSubmit)="saveFood()" #foodForm="ngForm">
       <div class="form-group">

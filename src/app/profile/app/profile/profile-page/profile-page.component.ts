@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output, } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
 
 @Component({
@@ -9,19 +9,9 @@ import { RouterModule, Router } from '@angular/router';
   styleUrls: ['./profile-page.component.scss']
 })
 export class ProfilePageComponent {
-  user = {
-    name: 'Laura Benites Marquez',
-    email: 'laura.benites@example.com',
-    profilePicture: 'assets/img/user.png'
-  };
-
-  constructor(private router: Router) {}
-
-  goToEditProfile() {
-    this.router.navigate(['/profile/edit']);
-  }
-
-  goToChangeProfilePicture() {
-    this.router.navigate(['/profile/change-picture']);
-  }
+router: any;
+// Método para redirigir a la página principal
+goBack() {
+  this.router.navigate(['/principal']);
+}
 }
