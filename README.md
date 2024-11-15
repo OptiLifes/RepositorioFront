@@ -24,3 +24,4 @@ Como usuario, quiero actualizar mi foto de perfil, para personalizar mi cuenta.
 
 HU05 - Actualizacion de perfil -------> (Alcantara Lopez) SOLO INTERFACES
 Como usuario registrado, quiero poder actualizar mis datos personales y ajustar mis metas de salud, para reflejar mis cambios de estilo de vida o necesidades actuales.
+

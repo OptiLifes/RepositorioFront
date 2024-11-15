@@ -10,6 +10,13 @@ import { RouterModule } from '@angular/router';
   styleUrl: './principal-page.component.scss'
 })
 export class PrincipalPageComponent {
+  isFoodEntryModalOpen= false;
+  openFoodEntryModal(){
+    this.isFoodEntryModalOpen = true;
+  }
+  closeFoodEntryModal(){
+    this.isFoodEntryModalOpen= false;
+  }
   constructor(private router: Router) {}
 
   goToProfile() {
