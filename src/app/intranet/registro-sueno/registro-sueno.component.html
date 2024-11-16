@@ -1,0 +1,28 @@
+<div class="sleep-entry-container">
+  <!-- Botón de Cierre -->
+  <button style="display: flex; justify-content: end; color: white;" class="close-button" (click)="closeForm()">✕</button>
+  
+  <h2>Registrar Hábitos de Sueño</h2>
+  
+  <form (ngSubmit)="saveSleepData()" #sleepForm="ngForm">
+    <!-- Hora de dormir -->
+    <div class="form-group">
+      <label for="sleepTime">Hora de Dormir:</label>
+      <input type="time" id="sleepTime" [(ngModel)]="sleepData.sleepTime" name="sleepTime" required />
+    </div>
+
+    <!-- Hora de despertar -->
+    <div class="form-group">
+      <label for="wakeUpTime">Hora de Despertar:</label>
+      <input type="time" id="wakeUpTime" [(ngModel)]="sleepData.wakeUpTime" name="wakeUpTime" required />
+    </div>
+
+    <!-- Botón para registrar -->
+    <button type="submit" [disabled]="!sleepForm.valid">Registrar</button>
+  </form>
+
+  <!-- Mensaje de confirmación -->
+  <p *ngIf="message">{{ message }}</p>
+</div>
+
+  

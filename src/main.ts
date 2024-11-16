@@ -1,12 +1,15 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideRouter } from '@angular/router';
 import { routes } from './app/app.routes';
-import { AppComponent } from './app/app.component';  // Asegúrate de estar usando AppComponent
+import { AppComponent } from './app/app.component';
 import { provideAnimations } from '@angular/platform-browser/animations';
+import { importProvidersFrom } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-bootstrapApplication(AppComponent, {  // Usa AppComponent aquí
+bootstrapApplication(AppComponent, {
   providers: [
-    provideRouter(routes),  // Proveer las rutas correctamente
-    provideAnimations(),  // Proveer las animaciones
-  ],
+    provideRouter(routes),
+    provideAnimations(),
+    importProvidersFrom(FormsModule) // Importar FormsModule correctamente
+  ]
 }).catch(err => console.error(err));

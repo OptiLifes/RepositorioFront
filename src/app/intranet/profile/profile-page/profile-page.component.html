@@ -1,0 +1,25 @@
+<div class="modal-overlay" *ngIf="isOpen">
+  <div class="profile-container">
+    <!-- Botón de Cierre -->
+    <div class="close-button" (click)="goBack()">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <!-- Información de Perfil -->
+    <div class="profile-info">
+      <img src="../../assets/img/perfil.jpeg"
+           alt="Foto de perfil"
+           class="profile-picture"
+           style="height: 150px; width: 150px;"
+           routerLink="/profile/change-picture">
+      <div class="profile-details">
+        <h2>Laura Benites Marquez</h2>
+        <p>Edad: 25 años</p>
+        <p>Talla: 160 cm</p>
+        <p>Peso: 62 kg</p>
+        <button routerLink="/profile/edit" class="btn-edit">Editar perfil</button>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,22 @@
+<div class="center-container">
+  <div class="change-picture-container">
+    <!-- Botón de retroceso -->
+    <div class="header-container">
+      <button class="back-button" (click)="goBack()">
+        <i class="fas fa-arrow-left"></i> Volver al perfil
+      </button>
+    </div>
+
+    <h2>Cambiar Foto de Perfil</h2>
+    <form (ngSubmit)="uploadPicture()">
+      <!-- Input para seleccionar archivo -->
+      <div class="file-input">
+        <label for="file">Seleccionar archivo:</label>
+        <input type="file" id="file" (change)="onFileSelected($event)" />
+      </div>
+
+      <!-- Botón para actualizar la foto -->
+      <button type="submit" class="submit-button">Actualizar Foto</button>
+    </form>
+  </div>
+</div>

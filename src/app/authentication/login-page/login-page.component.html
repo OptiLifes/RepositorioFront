@@ -1,6 +1,6 @@
 <div class="login-container">
   <h1>
-    <img src="assets/img/icono1.png" alt="Icono de usuario" class="icono">
+    <img src="../../../assets/img/icono1.png" alt="Icono de usuario" class="icono">
     Iniciar Sesión
   </h1>
   <form>
@@ -18,7 +18,7 @@
       <a href="#">¿Olvidaste tu contraseña?</a>
     </div>
 
-    <button mat-raised-button color="primary">Ingresar</button>
+    <button mat-raised-button color="primary" (click)="login()">Ingresar</button>
 
     <div class="register">
       <p>¿No tienes cuenta? <a [routerLink]="['/register']">Regístrate</a></p>
