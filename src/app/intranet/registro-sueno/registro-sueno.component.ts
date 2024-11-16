@@ -15,7 +15,6 @@ export class RegistroSuenoComponent {
   sleepData = {
     sleepTime: '',
     wakeUpTime: '',
-    sleepQuality: ''
   };
   message: string = '';
 
@@ -23,7 +22,7 @@ export class RegistroSuenoComponent {
 
   saveSleepData() {
     // Validar que los campos no estén vacíos
-    if (!this.sleepData.sleepTime || !this.sleepData.wakeUpTime || !this.sleepData.sleepQuality) {
+    if (!this.sleepData.sleepTime || !this.sleepData.wakeUpTime) {
       this.message = 'Por favor, complete todos los campos.';
       return;
     }

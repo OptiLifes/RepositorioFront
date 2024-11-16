@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class RegistroMetaAlimentacionComponent {
   metaForm: FormGroup;
+  message: string = '';
 
   constructor(private fb: FormBuilder, private router: Router) {
     // Inicialización del formulario reactivo
@@ -36,5 +37,9 @@ export class RegistroMetaAlimentacionComponent {
     } else {
       console.log('Formulario inválido');
     }
+    this.message = 'Se registró su meta de Alimentación correctamente.';
+    setTimeout(() => {
+      this.router.navigate(['/principal']);
+    }, 3000);
   }
 }

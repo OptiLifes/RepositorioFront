@@ -37,6 +37,9 @@
       <button type="submit" [disabled]="metaForm.invalid" class="submit-button">
         Guardar Meta
       </button>
+
+      <p *ngIf="message">{{ message }}</p>
+
     </form>
   </div>
 </div>
