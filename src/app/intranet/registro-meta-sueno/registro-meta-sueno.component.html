@@ -1,0 +1,45 @@
+<div class="center-container">
+  <div class="form-container">
+    <!-- Botón de cierre -->
+    <div class="close-button" (click)="goBack()">
+      <i class="fas fa-times"></i>
+    </div>
+    <h2>Meta de Sueno</h2>
+    <form [formGroup]="metaForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" formControlName="descripcion"placeholder="Describe tu meta de Sueno"></textarea>
+        <div *ngIf="metaForm.get('descripcion')?.invalid && metaForm.get('descripcion')?.touched" class="error">
+          La descripción es obligatoria.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="calorias">Calorías Diarias</label>
+        <input type="number" id="calorias" formControlName="calorias" placeholder="Ingresa calorías diarias" />
+      </div>
+
+      <div class="form-group">
+        <label>Gramos de Proteínas</label>
+        <input type="number" formControlName="proteinas" placeholder="Ingresa gramos de proteínas" />
+      </div>
+
+      <div class="form-group">
+        <label>Gramos de Grasas</label>
+        <input type="number" formControlName="grasas" placeholder="Ingresa gramos de grasas" />
+      </div>
+
+      <div class="form-group">
+        <label>Gramos de Carbohidratos</label>
+        <input type="number" formControlName="carbohidratos" placeholder="Ingresa gramos de carbohidratos" />
+      </div>
+
+      <button type="submit" [disabled]="metaForm.invalid" class="submit-button">
+        Guardar Meta
+      </button>
+
+      <p *ngIf="message">{{ message }}</p>
+
+    </form>
+  </div>
+</div>

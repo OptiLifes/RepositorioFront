@@ -11,6 +11,16 @@ import { CommonModule } from '@angular/common';
 })
 export class ProfilePageComponent {
   isOpen: boolean = true;
+  metas = [
+    {
+      titulo: 'Meta de Alimentación',
+      descripcion: 'Mantener una dieta balanceada',
+      calorias: 2000,
+      proteinas: 100,
+      grasas: 50,
+      carbohidratos: 250,
+    },
+  ];
   constructor(private router: Router) {}
 
 // Método para redirigir a la página principal
