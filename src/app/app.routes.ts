@@ -12,6 +12,7 @@ import { ProfilePageComponent } from './intranet/profile/profile-page/profile-pa
 import { EditProfileComponent } from './intranet/profile/edit-profile/edit-profile.component';
 import { ChangeProfilePictureComponent } from './intranet/profile/change-profile-picture/change-profile-picture.component';
 import {ForgotPasswordPageComponent} from "./authentication/forgot-password-page/forgot-password-page.component";
+import { ReporteDeProgresoComponent } from './intranet/reporte-de-progreso/reporte-de-progreso.component';
 
 export function authGuard(): boolean {
   const isAuthenticated = localStorage.getItem('isAuthenticated');
@@ -34,6 +35,7 @@ export const routes: Routes = [
   { path: 'registro-sueno', component: RegistroSuenoComponent, canActivate: [authGuard] },
   { path: 'registro-meta-alimentacion', component: RegistroMetaAlimentacionComponent, canActivate: [authGuard] },
   { path: 'registro-meta-hidratacion', component: RegistroMetaHidratacionComponent, canActivate: [authGuard] },
+  { path: 'reporte-de-progreso', component: ReporteDeProgresoComponent, canActivate: [authGuard]},
 
   // Redirección por defecto
   { path: '**', redirectTo: 'login', pathMatch: 'full' }

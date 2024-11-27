@@ -416,3 +416,40 @@ nav li:hover {
   font-size: 16px;
   font-weight: bold;
 }
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta según la necesidad */
+}
+
+.healthy-food-card {
+  background-color: #fff; /* Fondo del card */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* Ajusta el tamaño */
+}
+
+.action-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #008cba; /* Cambia por tu color */
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-buttons button:hover {
+  background-color: #005f75;
+}
