@@ -14,9 +14,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 50px;
+  padding: 10px 30px;
   background: linear-gradient(to right,  #2B8C82 0%,#2485A5  100%);
-  border-radius: 0px 0px 10px 10px;
 }
 
 .logo-container img {
@@ -71,8 +70,8 @@ header {
 }
 
 .text-container h1 {
-  font-size: 48px;
-  line-height: 1.2;
+  font-size: 96px;
+  line-height: 1;
   color: #000;
 }
 
@@ -83,8 +82,8 @@ header {
 .text-container p {
   font-size: 18px;
   color: #333;
-  margin-top: 20px;
-  max-width: 400px;
+  margin-top: 0;
+  max-width: 700px;
 }
 
 .image-container {
@@ -94,7 +93,7 @@ header {
 }
 
 .main-image {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   position: relative;
   z-index: 1;
@@ -106,13 +105,12 @@ header {
 .benefits {
   text-align: center;
   padding: 50px 20px;
-  border-radius: 30px;
   margin-top: -40px;
 
 }
 
 .benefits h2 {
-  font-size: 2.5rem;
+  font-size: 36px;
   margin-bottom: 40px;
   color: #333;
 }
@@ -182,7 +180,7 @@ header {
     text-align: left;
 
     h2 {
-      font-size: 2rem;
+      font-size: 40px;
       margin-bottom: 20px;
     }
 
