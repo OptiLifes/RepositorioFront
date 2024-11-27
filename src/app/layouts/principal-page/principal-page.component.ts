@@ -25,4 +25,6 @@ export class PrincipalPageComponent {
     localStorage.removeItem('isAuthenticated');
     this.router.navigate(['/']);
   }
+
+
 }

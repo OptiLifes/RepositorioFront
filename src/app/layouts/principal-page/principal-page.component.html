@@ -1,90 +1,96 @@
-<!-- Incluir Font Awesome desde CDN -->
-<div class="container">
-  <!-- Sidebar fijo -->
-  <div class="sidebar">
-    <!-- Imagen de perfil -->
-    <div class="profile-picture">
-      <img src="../../../assets/img/perfil.jpeg" alt="Perfil" routerLink="/profile" style="cursor: pointer;">
-    </div>
+<div class="Fondo">
+  <div class="menu">
+    <!-- Incluir Font Awesome desde CDN -->
+    <div class="container">
+      <!-- Sidebar fijo -->
+      <div class="sidebar">
+        <!-- Imagen de perfil -->
+        <div class="profile-picture">
+          <img src="../../../assets/img/perfil.jpeg" alt="Perfil" routerLink="/profile" style="cursor: pointer;">
+        </div>
 
-    <!-- Iconos del menú -->
-    <nav>
-      <ul>
-        <li><i class="fa fa-home"></i></li>
-        <li><i class="fa fa-bell"></i></li>
-        <li><i class="fa fa-star"></i></li>
-        <li><i class="fa fa-edit"></i></li>
-        <li routerLink="/reporte-de-progreso"><i class="fa fa-chart-line"></i></li>
-      </ul>
-    </nav>
+        <!-- Iconos del menú -->
+        <nav>
+          <ul>
+            <li><i class="fa fa-home"></i></li>
+            <li><i class="fa fa-bell"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-edit" ></i></li>
+            <li routerLink="/reporte-de-progreso"><i class="fa fa-chart-line"></i></li>
+          </ul>
+        </nav>
 
-    <!-- Icono de logout en la parte inferior -->
-    <div class="logout" (click)="logout()">
-      <i class="fa fa-sign-out-alt"></i>
+        <!-- Icono de logout en la parte inferior -->
+        <div class="logout" (click)="logout()">
+          <i class="fa fa-sign-out-alt"></i>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <!-- Contenedor centrado para "Comidas Saludables" -->
+        <div class="content-container">
+
+          <div class="card healthy-food" style="width: 500px;height: 180px;">
+            <div class="food-info">
+              <div class="food-details">
+                <img class="food" src="../../../assets/img/comidassaludables.png" alt="Comidas Saludables" >
+                <div>
+                  <h2>COMIDAS SALUDABLES</h2>
+                  <p>Aliméntate bien con nuestras recetas saludables que tenemos para ti</p>
+                </div>
+              </div>
+              <button><i class="fa fa-shopping-cart"></i> Hazte Premium</button>
+            </div>
+          </div>
+
+
+
+
+          <!-- Botones alineados debajo -->
+          <div class="action-buttons">
+            <img class="img-btn" src="../../../assets/img/registro-alimento.png" routerLink="/registro-alimento">
+            <img class="img-btn1" src="../../../assets/img/meta-alimento.png" routerLink="/registro-meta-alimentacion">
+          </div>
+        </div>
+
+        <div class="container-der">
+          <!-- Tarjeta Ejercita Tu Cuerpo -->
+          <div class="card-content" style="width: 500px;height: 180px;">
+            <div class="rutina-info">
+              <div class="rutina">
+                <div>
+                  <h2>EJERCITA TU CUERPO</h2>
+                  <p>Revisa tus progreso y rutinas todos los días</p>
+                </div>
+                <img class="ejer" src="../../../assets/img/rutina.png" alt="Ejercicio" >
+              </div>
+              <button class="rut">Rutina de ejercicios</button>
+            </div>
+          </div>
+
+          <div class="two-column-container">
+            <div class="columna-izquierda">
+                <button class="registro-dormir" routerLink="/registro-sueno">
+                    <img class="sueño" src="../../../assets/img/registro-sueno.png">
+                </button>
+
+                <button routerLink="/registro-agua">
+                    <img class="registro-beber" src="../../../assets/img/registro-agua.png" class="agua">
+                </button>
+
+            </div>
+            <div class="columna-derecha">
+              <div class="card-header">
+                <img src="../../../assets/img/sueno.png" alt="sueño" routerLink="/registro-meta-sueno">
+              </div>
+              <div class="card-footer">
+                <img src="../../../assets/img/hidratacion.png" alt="agua" routerLink="/registro-meta-hidratacion">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="main-container">
-    <!-- Contenedor centrado para "Comidas Saludables" -->
-    <div class="content-container">
-      <div style="width: 500px; height: 100px" class="card healthy-food">
-        <div class="food-image">
-          <img src="../../../assets/img/comidassaludables.png" alt="Comidas Saludables">
-        </div>
-        <div class="food-info">
-          <h2>COMIDAS SALUDABLES</h2>
-          <p>Aliméntate bien con nuestras recetas saludables que tenemos para ti</p>
-        </div>
-       <button><i class="fa fa-shopping-cart">Hazte Premium</i></button> 
-      </div>
-
-      <!-- Botones alineados debajo -->
-      <div class="action-buttons">
-        <button routerLink="/registro-meta-alimentacion">+ Agregar nueva meta alimentación</button>
-        <button routerLink="/registro-alimento">+ Registrar Alimento</button>
-        <button routerLink="/registro-agua">+Agregar Meta de Hidratacion</button>
-        <button routerLink="/registrar-meta-sueno">+ Agregar meta sueño</button>
-      </div>
-    </div>
-
-    <div class="container-der">
-      <!-- Tarjeta Ejercita Tu Cuerpo -->
-      <div class="card-content" style="margin-top: 0;">
-        <h2>EJERCITA TU CUERPO</h2>
-        <p>Revisa tus progreso y rutinas todos los días</p>
-        <small>Rutina de ejercicios</small>
-      </div>
-
-      <div class="two-column-container">
-        <div class="columna-izquierda">
-          <div class="progress-card">
-            <button style="background-color: transparent; border: transparent; color: white" routerLink="/registro-sueno">
-              <div style="align-content: center; justify-content: center;" class="sueño">
-                <img style="height: 100px; width: 150px;" src="../../../assets/img/hora-sueño.png">
-                <p>REGISTRO DE SUEÑO</p>
-              </div>
-            </button>
-          </div>
-          <div style="margin-top: 6px;" class="progress-card">
-            <button style="background-color: transparent; border: transparent; color: white" routerLink="/registro-agua">
-              <div class="agua">
-                <img style="height: 100px; width: 100px;" src="../../../assets/img/hidrata.png">
-                <p>REGISTRO DE AGUA</p>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div class="columna-derecha">
-          <div style="height: 300px;" class="card-header">
-            <img src="../../../assets/img/item-sueño.png" alt="sueño">
-          </div>
-          <p style="color: white; font-weight: bold; font-size: 20px; margin: 0;">DESCANSA BIEN</p>
-          <div class="card-footer">
-            <img style="height: 350px;" src="../../../assets/img/item-agua.png" alt="agua">
-          </div>
-          <p style="color: white; font-weight: bold; font-size: 24px; margin: 0;">MANTENTE HIDRATADO</p>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
