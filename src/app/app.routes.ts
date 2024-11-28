@@ -4,15 +4,16 @@ import { LoginPageComponent } from './authentication/login-page/login-page.compo
 import { RegisterPageComponent } from './authentication/register-page/register-page.component';
 import { PrincipalPageComponent } from './layouts/principal-page/principal-page.component';
 import { RegistroMetaAlimentacionComponent } from './intranet/registro-meta-alimentacion/registro-meta-alimentacion.component';
-import {RegistroMetaHidratacionComponent} from "./intranet/registro-meta-hidratacion/registro-meta-hidratacion.component";
+import {RegistroMetaHidratacionComponent} from './intranet/registro-meta-hidratacion/registro-meta-hidratacion.component';
 import { RegistroAlimentoComponent } from './intranet/registro-alimento/registro-alimento.component';
 import { RegistroAguaComponent } from './intranet/registro-agua/registro-agua.component';
 import { RegistroSuenoComponent } from './intranet/registro-sueno/registro-sueno.component';
 import { ProfilePageComponent } from './intranet/profile/profile-page/profile-page.component';
 import { EditProfileComponent } from './intranet/profile/edit-profile/edit-profile.component';
 import { ChangeProfilePictureComponent } from './intranet/profile/change-profile-picture/change-profile-picture.component';
-import {ForgotPasswordPageComponent} from "./authentication/forgot-password-page/forgot-password-page.component";
+import { ForgotPasswordPageComponent} from "./authentication/forgot-password-page/forgot-password-page.component";
 import { ReporteDeProgresoComponent } from './intranet/reporte-de-progreso/reporte-de-progreso.component';
+import { RegistroMetaSuenoComponent } from './intranet/registro-meta-sueno/registro-meta-sueno.component';
 
 export function authGuard(): boolean {
   const isAuthenticated = localStorage.getItem('isAuthenticated');
@@ -36,6 +37,7 @@ export const routes: Routes = [
   { path: 'registro-meta-alimentacion', component: RegistroMetaAlimentacionComponent, canActivate: [authGuard] },
   { path: 'registro-meta-hidratacion', component: RegistroMetaHidratacionComponent, canActivate: [authGuard] },
   { path: 'reporte-de-progreso', component: ReporteDeProgresoComponent, canActivate: [authGuard]},
+  { path: 'registro-meta-sueno', component: RegistroMetaSuenoComponent, canActivate: [authGuard]},
 
   // Redirección por defecto
   { path: '**', redirectTo: 'login', pathMatch: 'full' }

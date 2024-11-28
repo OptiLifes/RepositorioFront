@@ -4,41 +4,38 @@
     <div class="close-button" (click)="goBack()">
       <i class="fas fa-times"></i>
     </div>
-    <h2>Meta de Sueno</h2>
-    <form [formGroup]="metaForm" (ngSubmit)="onSubmit()">
+
+    <h2>Registrar Meta de Sueño</h2>
+
+    <!-- Formulario -->
+    <form [formGroup]="sleepGoalForm" (ngSubmit)="onSubmit()">
+
       <div class="form-group">
-        <label for="descripcion">Descripción</label>
-        <textarea id="descripcion" formControlName="descripcion"placeholder="Describe tu meta de Sueno"></textarea>
-        <div *ngIf="metaForm.get('descripcion')?.invalid && metaForm.get('descripcion')?.touched" class="error">
-          La descripción es obligatoria.
+        <label for="sleepHours">Horas de Sueño</label>
+        <input
+          type="number"
+          id="sleepHours"
+          class="form-control"
+          formControlName="sleepHours"
+          placeholder="Ingresa tus horas de sueño"
+        />
+        <!-- Mensaje de error si el campo es inválido -->
+        <div *ngIf="sleepGoalForm.get('sleepHours')?.invalid && sleepGoalForm.get('sleepHours')?.touched" class="text-danger">
+          <small *ngIf="sleepGoalForm.get('sleepHours')?.errors?.['required']">Este campo es obligatorio.</small>
+          <small *ngIf="sleepGoalForm.get('sleepHours')?.errors?.['min']">Debe ser al menos 1 hora.</small>
         </div>
       </div>
 
-      <div class="form-group">
-        <label for="calorias">Calorías Diarias</label>
-        <input type="number" id="calorias" formControlName="calorias" placeholder="Ingresa calorías diarias" />
-      </div>
-
-      <div class="form-group">
-        <label>Gramos de Proteínas</label>
-        <input type="number" formControlName="proteinas" placeholder="Ingresa gramos de proteínas" />
-      </div>
-
-      <div class="form-group">
-        <label>Gramos de Grasas</label>
-        <input type="number" formControlName="grasas" placeholder="Ingresa gramos de grasas" />
-      </div>
-
-      <div class="form-group">
-        <label>Gramos de Carbohidratos</label>
-        <input type="number" formControlName="carbohidratos" placeholder="Ingresa gramos de carbohidratos" />
-      </div>
-
-      <button type="submit" [disabled]="metaForm.invalid" class="submit-button">
-        Guardar Meta
+      <button
+        type="submit"
+        class="submit-button"
+        [disabled]="sleepGoalForm.invalid"
+      >
+        Registrar Meta
       </button>
 
-      <p *ngIf="message">{{ message }}</p>
+      <!-- Mensaje de éxito -->
+      <p *ngIf="message" class="success-message">{{ message }}</p>
 
     </form>
   </div>
