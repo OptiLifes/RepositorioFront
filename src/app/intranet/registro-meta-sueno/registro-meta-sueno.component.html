@@ -5,7 +5,7 @@
       <i class="fas fa-times"></i>
     </div>
     <h2>Meta de Sueno</h2>
-    <form [formGroup]="metaForm" (ngSubmit)="onSubmit()">
+    <form (ngSubmit)="onSubmit()">
       <div class="form-group">
         <label for="descripcion">Descripción</label>
         <textarea id="descripcion" formControlName="descripcion"placeholder="Describe tu meta de Sueno"></textarea>
