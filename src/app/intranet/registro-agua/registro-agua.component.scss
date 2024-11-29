@@ -2,24 +2,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   .form-group {
     margin-bottom: 15px;
+
   }
-  
-  
+
+
   button {
     padding: 5px;
-    background-color: #115a4e;
+    background-color:#1C394D;
     color: white;
     border: none;
     border-radius: 25px;
     cursor: pointer;
   }
-  
+
   p {
     margin-top: 15px;
-    
+
   }
 }
 
@@ -34,4 +35,3 @@
   cursor: pointer;
 }
 
-  

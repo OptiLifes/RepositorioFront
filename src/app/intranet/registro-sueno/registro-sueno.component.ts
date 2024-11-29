@@ -38,4 +38,8 @@ export class RegistroSuenoComponent {
   closeForm() {
     this.router.navigate(['/principal']);
   }
+  // Método para redirigir a la página principal
+  goBack() {
+    this.router.navigate(['/principal']);
+  }
 }

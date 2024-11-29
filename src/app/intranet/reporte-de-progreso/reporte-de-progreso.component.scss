@@ -1,0 +1,101 @@
+/* General Styles */
+.progress-report {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+.report-btn {
+  background-color: #115a4e; /* Blue button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 180px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.report-btn:hover {
+  background-color: #2B8C82; /* Darker blue on hover */
+}
+
+/* Activity Indicators */
+.activity-indicators {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 120px;
+  background: linear-gradient(180deg, #1B3546, #36AFA3);
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.indicator:hover {
+  transform: scale(1.1);
+}
+
+.indicator .icon {
+  font-size: 40px;
+  color: #333;
+}
+
+.indicator p {
+  font-size: 12px;
+  color: white;
+  margin: 5px 0;
+}
+
+.indicator span {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Weekly Progress */
+.weekly-progress {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.day-progress {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.day {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff; /* Blue color for days */
+}
+
+.day-progress p {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}

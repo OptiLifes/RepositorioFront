@@ -1,9 +1,10 @@
 <div class="sleep-entry-container">
   <!-- Botón de Cierre -->
-  <button style="display: flex; justify-content: end; color: white;" class="close-button" (click)="closeForm()">✕</button>
-  
+  <div class="close-button" (click)="goBack()">
+    <i class="fas fa-times"></i>
+  </div>
   <h2>Registrar Hábitos de Sueño</h2>
-  
+
   <form (ngSubmit)="saveSleepData()" #sleepForm="ngForm">
     <!-- Hora de dormir -->
     <div class="form-group">
@@ -25,4 +26,4 @@
   <p *ngIf="message">{{ message }}</p>
 </div>
 
-  
+

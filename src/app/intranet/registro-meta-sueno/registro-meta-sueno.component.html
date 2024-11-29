@@ -1,0 +1,42 @@
+<div class="center-container">
+  <div class="form-container">
+    <!-- Botón de Cierre -->
+    <div class="close-button" (click)="goBack()">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <h2>Registrar Meta de Sueño</h2>
+
+    <!-- Formulario -->
+    <form [formGroup]="sleepGoalForm" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="sleepHours">Horas de Sueño</label>
+        <input
+          type="number"
+          id="sleepHours"
+          class="form-control"
+          formControlName="sleepHours"
+          placeholder="Ingresa tus horas de sueño"
+        />
+        <!-- Mensaje de error si el campo es inválido -->
+        <div *ngIf="sleepGoalForm.get('sleepHours')?.invalid && sleepGoalForm.get('sleepHours')?.touched" class="text-danger">
+          <small *ngIf="sleepGoalForm.get('sleepHours')?.errors?.['required']">Este campo es obligatorio.</small>
+          <small *ngIf="sleepGoalForm.get('sleepHours')?.errors?.['min']">Debe ser al menos 1 hora.</small>
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        class="submit-button"
+        [disabled]="sleepGoalForm.invalid"
+      >
+        Registrar Meta
+      </button>
+
+      <!-- Mensaje de éxito -->
+      <p *ngIf="message" class="success-message">{{ message }}</p>
+
+    </form>
+  </div>
+</div>

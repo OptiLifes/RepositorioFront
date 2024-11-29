@@ -1,0 +1,71 @@
+<div class="center-container">
+  <div class="form-container">
+    <!-- Botón de cierre -->
+    <div class="close-button" (click)="goBack()">
+      <i class="fas fa-times"></i>
+    </div>
+    <h2>Meta de Hidratación</h2>
+    <form [formGroup]="hydrationForm" (ngSubmit)="onSubmit()">
+      <!-- Descripción -->
+      <div class="form-group">
+        <label for="description">Descripción</label>
+        <textarea
+          id="description"
+          formControlName="description"
+          placeholder="Describe tu meta de Hidratación"
+        ></textarea>
+        <div
+          class="error"
+          *ngIf="hydrationForm.get('description')?.invalid && hydrationForm.get('description')?.touched"
+        >
+          La descripción es obligatoria.
+        </div>
+      </div>
+
+      <!-- Consumo Diario de Agua -->
+      <div class="form-group">
+        <label for="dailyWaterIntake">Consumo Diario de Agua (litros)</label>
+        <input
+          type="number"
+          id="dailyWaterIntake"
+          formControlName="dailyWaterIntake"
+          placeholder="Ingresa el consumo diario de agua"
+        />
+        <div
+          class="error"
+          *ngIf="hydrationForm.get('dailyWaterIntake')?.invalid && hydrationForm.get('dailyWaterIntake')?.touched"
+        >
+          El consumo diario de agua es obligatorio.
+        </div>
+      </div>
+
+      <!-- Intervalo de Horas -->
+      <div class="form-group">
+        <label for="interval">Intervalo de Horas</label>
+        <select id="interval" formControlName="interval">
+          <option value="media hora">Treinta minutos</option>
+          <option value="una hora">Una Hora</option>
+          <option value="dos horas">Dos Horas</option>
+        </select>
+        <div
+          class="error"
+          *ngIf="hydrationForm.get('interval')?.invalid && hydrationForm.get('interval')?.touched"
+        >
+          El intervalo de horas es obligatorio.
+        </div>
+      </div>
+
+      <!-- Botón Guardar Meta -->
+      <button
+        type="submit"
+        [disabled]="hydrationForm.invalid"
+        class="submit-button"
+      >
+        Guardar Meta
+      </button>
+    </form>
+
+    <!-- Mensaje de éxito o error -->
+    <p *ngIf="message" class="success-message">{{ message }}</p>
+  </div>
+</div>
