@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterModule, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -11,20 +11,23 @@ import { CommonModule } from '@angular/common';
 })
 export class ProfilePageComponent {
   isOpen: boolean = true;
-  metas = [
-    {
-      titulo: 'Meta de Alimentación',
-      descripcion: 'Mantener una dieta balanceada',
-      calorias: 2000,
-      proteinas: 100,
-      grasas: 50,
-      carbohidratos: 250,
-    },
-  ];
-  constructor(private router: Router) {}
 
-// Método para redirigir a la página principal
-goBack() {
-  this.router.navigate(['/principal']);
-}
+  // Lista de metas
+  metas = [
+    { id: 1, descripcion: 'Reducir 20 kg' },
+    { id: 2, descripcion: 'Hacer ejercicio 5 veces por semana' },
+    { id: 3, descripcion: 'Comer saludable' }
+  ];
+
+  constructor(private router: Router) { }
+
+  // Método para redirigir a la página principal
+  goBack(): void {
+    this.router.navigate(['/principal']);
+  }
+
+  // Método para eliminar una meta
+  eliminarMeta(id: number): void {
+    this.metas = this.metas.filter(meta => meta.id !== id);
+  }
 }

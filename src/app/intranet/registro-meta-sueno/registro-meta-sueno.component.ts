@@ -34,8 +34,12 @@ export class RegistroMetaSuenoComponent {
       this.message = 'Por favor, ingrese un valor válido de horas de sueño.';
     }
   }
-
-  goBack(): void {
+  // Función para cerrar el formulario y redirigir a la página principal
+  closeForm() {
+    this.router.navigate(['/principal']);
+  }
+  // Método para redirigir a la página principal
+  goBack() {
     this.router.navigate(['/principal']);
   }
 }
