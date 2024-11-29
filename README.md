@@ -83,3 +83,8 @@ HU015 - Meta de Hidratacion
 Como usuario, quiero definir una meta diaria de consumo de agua, para mejorar mi hidratación.
 Implementacion del frontend---->Andre Zumaeta
 Pruebas----->Francisco Valverde
+
+HU016 - Eliminar meta
+Como usuario, quiero poder eliminar una meta si ya no es relevante para mis objetivos de salud, para mantener mi lista de metas actualizada.
+Implementacion del frontend---->Andre Zumaeta
+Pruebas----->Francisco Valverde
