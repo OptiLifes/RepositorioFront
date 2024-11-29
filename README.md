@@ -58,3 +58,28 @@ HU010 - Meta de Alimentacion
 Como usuario, quiero poder registrar y gestionar mis metas de alimentación, para poder monitorear mi progreso y asegurarme de cumplir mis objetivos nutricionales diarios
 Implementacion del frontend---->Liz Rosas
 Pruebas----->Francisco Valverde
+
+HU011 - Visualizacion de metas
+Como usuario, quiero ver una lista de todas mis metas de salud, para conocer mis objetivos activos sin necesidad de hacer modificaciones.
+Implementacion del frontend---->Liz Rosas
+Pruebas----->Francisco Valverde
+
+HU012 - Recuperacion de contraseña
+Como usuario, quiero recibir un enlace por correo para restablecer mi contraseña si la he olvidado, para poder acceder de nuevo a mi cuenta.
+Implementacion del frontend---->Alain Alcantara 
+Pruebas----->Francisco Valverde
+
+HU013 - Reportes
+Como usuario, quiero acceder a gráficos que muestren mi progreso en mis metas, para ver cómo avanzo hacia mis objetivos.
+Implementacion del frontend---->Liz Rosas
+Pruebas----->Francisco Valverde
+
+HU014 - Descarga de Reporte en PDF
+Como usuario, quiero descargar un reporte en PDF de mi progreso, para compartirlo con mi médico o entrenador.
+Implementacion del frontend---->Liz Rosas
+Pruebas----->Francisco Valverde
+
+HU015 - Meta de Hidratacion
+Como usuario, quiero definir una meta diaria de consumo de agua, para mejorar mi hidratación.
+Implementacion del frontend---->Andre Zumaeta
+Pruebas----->Francisco Valverde
